@@ -29,13 +29,17 @@ const ComicsListCharacter = () => {
   ) : (
     <main>
       <div className="title">
-      <h1>Details</h1>
+        <h1>Details</h1>
       </div>
-      
+
       <div className="big-card">
         <div>
           <h2>{comicsListData.name}</h2>
-          <p>{comicsListData.description}</p>
+          {comicsListData.description ? (
+            <p> {comicsListData.description}</p>
+          ) : (
+            <p>Oups! ... Pas de description pour le moment, mais prochainement !</p>
+          )}
         </div>
 
         {comicsListData.thumbnail.path ? (
