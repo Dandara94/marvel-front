@@ -51,7 +51,7 @@ const ComicsListCharacter = () => {
       </div>
 
       <div className="title">
-        <h1>Liste des comics</h1>
+        <h1>La liste de comics</h1>
       </div>
 
       <section className="small-cards-section">
