@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+
 const Comic = () => {
   const [comicData, setComicData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -11,7 +12,7 @@ const Comic = () => {
     const fetchComicData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:3000/comic/${comicId}`
+          `https://site--marvel-backend--bxhl9p57cby7.code.run/comic/${comicId}`
         );
         // console.log(data);
         setComicData(data);
